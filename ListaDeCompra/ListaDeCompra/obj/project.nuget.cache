@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "7Qyukm1DVf0BylF/XvcroBfsQtBN2V0cGc07jtuGLOV4I6hN4nBEdIYfbtsyw8kmGiF8XgygdrWpnqKJ2xkwmw==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Usuario\\source\\repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\ListaDeCompra.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Falha ao baixar o pacote 'SQLitePCLRaw.lib.e_sqlite3.2.0.4' de 'https://api.nuget.org/v3-flatcontainer/sqlitepclraw.lib.e_sqlite3/2.0.4/sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg'.\r\nO tempo limite para o download de 'https://api.nuget.org/v3-flatcontainer/sqlitepclraw.lib.e_sqlite3/2.0.4/sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg' foi atingido porque nenhum dado foi recebido por 60000 ms.\r\n  Exceção do tipo 'System.TimeoutException' foi acionada."
+    }
+  ]
+}
