@@ -10,7 +10,7 @@ namespace ListaDeCompra.Model
         string _nome;
         double _qnt;
 
-        [PrimaryKey, Autoincrement]
+        [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
 
         public string Nome 
@@ -48,7 +48,7 @@ namespace ListaDeCompra.Model
 
         public double Precototal 
         {
-            get => Preco * Qnt;
+            get => preco * Qnt;
         }
     }
 }

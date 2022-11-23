@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\source\\repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\ListaDeCompra.csproj": {}
+    "C:\\Users\\Usuario\\Source\\Repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\ListaDeCompra.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\source\\repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\ListaDeCompra.csproj": {
+    "C:\\Users\\Usuario\\Source\\Repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\ListaDeCompra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\ListaDeCompra.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\Source\\Repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\ListaDeCompra.csproj",
         "projectName": "ListaDeCompra",
-        "projectPath": "C:\\Users\\Usuario\\source\\repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\ListaDeCompra.csproj",
+        "projectPath": "C:\\Users\\Usuario\\Source\\Repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\ListaDeCompra.csproj",
         "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\source\\repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\obj\\",
+        "outputPath": "C:\\Users\\Usuario\\Source\\Repos\\AppListaCompras\\ListaDeCompra\\ListaDeCompra\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListaDeCompra.View.Listagem">
+    <ContentPage.Resources>
+            <ResourceDictionary>
+                <Style TargetType="Label">
+                    <Setter Property="VerticalTextAlignment" Value="Center" />
+                    <Setter Property="VerticalOptions" Value="FillAndExpand" />
+                </Style>
+
+                <Style x:Key="stacklayoutStyle" TargetType="StackLayout">
+                    <Setter Property="VisualStateManager.VisualStateGroups">
+                        <VisualStateGroupList>
+                            <VisualStateGroup x:Name="CommonStates">
+                                <VisualState x:Name="Normal" />
+
+                                <VisualState x:Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Property="BackgroundColor" Value="LightGray" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateGroupList>
+                    </Setter>
+                </Style>
+
+
+            </ResourceDictionary>
+        </ContentPage.Resources>
+
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Text="Somar" Clicked="ToolbarItem_Clicked_Somar" />
+            <ToolbarItem Text="Adicionar" Clicked="ToolbarItem_Clicked_Add" />
+        </ContentPage.ToolbarItems>
+
+        <ContentPage.Content>
+            <StackLayout>
+                <SearchBar x:Name="txt_search"
+                       Margin="-10, 0, 0, 0"
+                       Placeholder="Busca de Produtos"
+                       TextChanged="txt_search_TextChanged" />
+
+                <RefreshView x:Name="ref_carregando" 
+                         IsRefreshing="False" 
+                         Refreshing="lst_produtos_Refreshing">
+
+                    <ListView x:Name="lst_produtos" ItemSelected="lst_produtos_ItemSelected" >
+                        <ListView.Header>
+                            <Grid ColumnDefinitions="3*, *, *, *" RowDefinitions="Auto">
+                                <Label Grid.Row="0" Grid.Column="0" FontAttributes="Bold" Text="PRODUTO" />
+                                <Label Grid.Row="0" Grid.Column="1" FontAttributes="Bold" Text="QNT"  />
+                                <Label Grid.Row="0" Grid.Column="2" FontAttributes="Bold" Text="PREÇO" />
+                                <Label Grid.Row="0" Grid.Column="3" FontAttributes="Bold" Text="TOTAL" />
+                            </Grid>
+                        </ListView.Header>
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.ContextActions>
+                                        <MenuItem Text="Remover" Clicked="MenuItem_Clicked_Remover" />
+                                    </ViewCell.ContextActions>
+
+                                    <StackLayout Style="{StaticResource stacklayoutStyle}">
+
+                                        <Grid ColumnDefinitions="3*, *, *, *" RowDefinitions="Auto">
+                                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Nome}" />
+                                            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Qnt}" />
+                                            <Label Grid.Row="0" Grid.Column="2" Text="{Binding Preco, StringFormat='{}{0:c}'}" />
+                                            <Label Grid.Row="0" Grid.Column="3" Text="{Binding PrecoTotal, StringFormat='{}{0:c}'}" />
+                                        </Grid>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </RefreshView>
+            </StackLayout>
+        </ContentPage.Content>
+</ContentPage>

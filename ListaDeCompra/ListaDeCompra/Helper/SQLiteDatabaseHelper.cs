@@ -27,7 +27,24 @@ namespace ListaDeCompra.Helper
         {
             string sql = "UPDATE Produto SET Nome = ?, Qnt = ?, Preco = ? WHERE id = ?";
 
-            return _conn.QueryAsync<Produto>(sql, p.Nome, p.Qnt, p.Preco, p.Id);
+            return _conn.QueryAsync<Produto>(sql, p.Nome, p.Qnt, p.preco, p.Id);
+        }
+
+        public Task<List<Produto>> GetAll()
+        {
+            return _conn.Table<Produto>().ToListAsync();
+        }
+
+        public Task<int> Delete(int id)
+        {
+            return _conn.Table<Produto>().DeleteAsync(i => i.Id == id);
+        }
+
+        public Task<List<Produto>> Search(string q)
+        {
+            string sql = "SELECT * FROM Produto WHERE nome LIKE '%\" + q + \"%'\"";
+
+            return _conn.QueryAsync<Produto>(sql);
         }
     }   
 }
