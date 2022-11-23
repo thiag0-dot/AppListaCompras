@@ -1,0 +1,16 @@
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\View\Formulario.xaml.g.cs
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\View\Listagem.xaml.g.cs
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.AssemblyInfoInputs.cache
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.AssemblyInfo.cs
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.dll
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\refint\ListaDeCompra.dll
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.pdb
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\bin\Debug\netstandard2.0\ListaDeCompra.deps.json
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\bin\Debug\netstandard2.0\ListaDeCompra.dll
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\bin\Debug\netstandard2.0\ListaDeCompra.pdb
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Usuario\source\repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ref\ListaDeCompra.dll

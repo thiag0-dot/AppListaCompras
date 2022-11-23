@@ -5,6 +5,7 @@ using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ListaDeCompra.Helper;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -41,7 +42,7 @@ namespace ListaDeCompra.View
             {
                 Task.Run(async () =>
                 {
-                    List<Produto> temp = await App.Db.getAll();
+                    List<Produto> temp = await App.Db.GetAll();
 
                     foreach (Produto p in temp)
                     {
@@ -49,6 +50,68 @@ namespace ListaDeCompra.View
                     }
                 });
             }
+        }
+
+        private void lst_produtos_Refreshing(object sender, EventArgs e)
+        {
+            lista_produtos.Clear();
+
+            Task.Run(async () =>
+            {
+                List<Produto> temp = await App.Db.GetAll();
+
+                foreach(Produto p in temp)
+                {
+                    lista_produtos.Add(p);
+                }
+            });
+
+            ref_carregando.IsRefreshing = false;
+        }
+
+        
+
+        private async void MenuItem_Clicked_Remover(object sender, EventArgs e)
+        {
+            MenuItem disparador = sender as MenuItem;
+
+            Produto produto_selecionado = (Produto)disparador.BindingContext;
+
+            string mensagem = "Remover " + produto_selecionado.Nome + " da compra? ";
+
+            bool confirmacao = await DisplayAlert("Tem Certeza?", mensagem, "Sim", "Não");
+
+            if (confirmacao)
+            {
+                await App.Db.Delete(produto_selecionado.Id);
+                lista_produtos.Remove(produto_selecionado);
+            }
+        }
+
+        private void txt_search_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string q = e.NewTextValue;
+            lista_produtos.Clear();
+
+            Task.Run(async () =>
+            {
+                List<Produto> temp = await App.Db.Search(q);
+
+                foreach (Produto p in temp)
+                {
+                    lista_produtos.Add(p);
+                }
+            });
+        }
+
+        private void lst_produtos_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            Produto produto_selecionado = e.SelectedItem as Produto;
+
+            Navigation.PushAsync(new Formulario
+            {
+                BindingContext = produto_selecionado,
+            });
         }
     }
 }

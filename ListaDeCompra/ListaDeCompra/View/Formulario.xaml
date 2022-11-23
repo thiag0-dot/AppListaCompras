@@ -2,11 +2,30 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ListaDeCompra.View.Formulario">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+            <ToolbarItem Clicked="ToolbarItem_Clicked" Text="Salvar" />
+        </ContentPage.ToolbarItems>
+
+        <ContentPage.Content>
+            <StackLayout>
+                <Frame>
+                    <StackLayout>
+                        <Label Text="Produto:" />
+                        <Entry x:Name="txt_nome" Text="{Binding Nome }" />
+
+                        <Label Text="Quantidade:" />
+                        <Entry x:Name="txt_qnt" Text="{Binding Qnt}"  TextChanged="atualiza_total" Keyboard="Numeric" />
+
+                        <Label Text="Preço:" />
+                        <Entry x:Name="txt_preco" Text="{Binding preco}" TextChanged="atualiza_total" Keyboard="Numeric" />
+
+                        <Label Text="Total Item:" />
+                        <Entry x:Name="txt_total_item" 
+                           Text="{Binding Precototal, StringFormat='{}{0:c}'}" 
+                           IsReadOnly="True" />
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </ContentPage.Content>
 </ContentPage>
