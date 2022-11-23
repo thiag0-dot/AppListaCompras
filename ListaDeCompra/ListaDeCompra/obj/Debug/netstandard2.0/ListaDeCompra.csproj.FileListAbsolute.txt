@@ -1,7 +1,0 @@
-C:\Users\Usuario\Source\Repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.csproj.AssemblyReference.cache
-C:\Users\Usuario\Source\Repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Usuario\Source\Repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\App.xaml.g.cs
-C:\Users\Usuario\Source\Repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\View\Formulario.xaml.g.cs
-C:\Users\Usuario\Source\Repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.AssemblyInfoInputs.cache
-C:\Users\Usuario\Source\Repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.AssemblyInfo.cs
-C:\Users\Usuario\Source\Repos\AppListaCompras\ListaDeCompra\ListaDeCompra\obj\Debug\netstandard2.0\ListaDeCompra.csproj.CoreCompileInputs.cache
